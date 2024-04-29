@@ -1,7 +1,7 @@
 # Site settings
-title: Kill Bill 18
-email: killbill18@cafa-ab.ca
-description: > # this means to ignore newlines until "baseurl:"
+title: Stop Bill 18
+email: stopbill18@cafa-ab.ca
+description: "Help fight Bill 18." > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
