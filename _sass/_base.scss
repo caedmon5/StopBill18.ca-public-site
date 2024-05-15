@@ -156,7 +156,8 @@ header {
     width: 100%;
     min-height: auto;
     @include background-cover;
-background-position: 4% 50%; /* Align the person to the center for mobile */    /* original background-position: center; */
+    background-size: cover;
+    background-position: 96% 50%; /* Align the person to the center for mobile */    /* original background-position: center; */
     background-image: url('../img/YellowRedTape.png');
     text-align: center;
     color: transparent;
