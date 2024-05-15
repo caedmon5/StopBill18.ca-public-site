@@ -156,7 +156,7 @@ header {
     width: 100%;
     min-height: auto;
     @include background-cover;
-    background-position: center;
+background-position: 4% 50%; /* Align the person to the center for mobile */    /* original background-position: center; */
     background-image: url('../img/YellowRedTape.png');
     text-align: center;
     color: transparent;
@@ -186,6 +186,7 @@ header {
     }
     @media (min-width: 768px) {
         min-width: 100%;
+        background-position: center; /* Center the background for desktop */
         .header-content {
             position: absolute;
             top: 50%;
