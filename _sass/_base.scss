@@ -155,27 +155,30 @@ header {
     position: relative;
     width: 100%;
     min-height: auto;
-    @include background-cover;
+    @include background-cover; /* Ensure this mixin is defined */
     background-position: center;
     background-image: url('../img/YellowRedTape.png');
     text-align: center;
-    color: transparent;
+    color: #000; /* Changed from transparent for visibility */
+    
     .header-content {
         position: relative;
         text-align: center;
-        padding: 100px 15px 100px;
+        padding: 100px 15px;
         width: 100%;
+        
         .header-content-inner {
             h1 {
                 font-weight: 700;
-                /* text-transform: uppercase; */
-                color: transparent;
+                color: #000; /* Changed from transparent for visibility */
                 margin-top: 0;
                 margin-bottom: 0;
             }
+            
             hr {
                 margin: 30px auto;
             }
+            
             p {
                 font-weight: 300;
                 color: inherit;
@@ -184,19 +187,19 @@ header {
             }
         }
     }
+    
     @media (min-width: 768px) {
-        /* min-width: 100%;*/ 
         .header-content {
             position: absolute;
             top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
             transform: translateY(-50%);
             padding: 0 50px;
+            
             .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
                 margin-right: auto;
+                
                 p {
                     font-size: 18px;
                     max-width: 80%;
