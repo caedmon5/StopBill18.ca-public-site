@@ -154,19 +154,19 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 100vh; /* Ensures the header takes up the full viewport height */
     @include background-cover; /* Ensure this mixin is defined */
     background-position: center;
     background-image: url('../img/YellowRedTape.png');
     text-align: center;
     color: #000; /* Changed from transparent for visibility */
-    
+
     .header-content {
         position: relative;
         text-align: center;
         padding: 100px 15px;
         width: 100%;
-        
+
         .header-content-inner {
             h1 {
                 font-weight: 700;
@@ -174,11 +174,11 @@ header {
                 margin-top: 0;
                 margin-bottom: 0;
             }
-            
+
             hr {
                 margin: 30px auto;
             }
-            
+
             p {
                 font-weight: 300;
                 color: inherit;
@@ -187,19 +187,21 @@ header {
             }
         }
     }
-    
+
     @media (min-width: 768px) {
         .header-content {
             position: absolute;
             top: 50%;
+            left: 0;
+            right: 0;
             transform: translateY(-50%);
             padding: 0 50px;
-            
+
             .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
                 margin-right: auto;
-                
+
                 p {
                     font-size: 18px;
                     max-width: 80%;
@@ -210,6 +212,7 @@ header {
         }
     }
 }
+
 
 // Sections
 
