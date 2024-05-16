@@ -5,6 +5,13 @@
     transition: all 0.35s;
 }
 
+@mixin background-contain()
+{
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+}
 @mixin background-cover()
 {
     -webkit-background-size: cover;
