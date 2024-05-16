@@ -155,7 +155,7 @@ header {
     position: relative;
     width: 100%;
     min-height: 100vh; /* Ensures the header takes up the full viewport height */
-    @include background-contain; /* Ensure this mixin is defined */
+    @include background-cover; /* Ensure this mixin is defined */
     background-position: center;
     background-image: url('../img/redtapeBig.png');
     text-align: center;
@@ -189,7 +189,6 @@ header {
     }
 
     @media (min-width: 768px) {
-    @include background-cover; /* Ensure this mixin is defined */
 background-image: url('../img/YellowRedTape.png');
         .header-content {
             position: absolute;
