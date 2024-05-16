@@ -157,7 +157,7 @@ header {
     min-height: 100vh; /* Ensures the header takes up the full viewport height */
     @include background-cover; /* Ensure this mixin is defined */
     background-position: center;
-    background-image: url('../img/redtapeBig.png');
+    background-image: url('../img/redtapemobile.png');
     text-align: center;
     color: transparent; /* Changed from transparent for visibility */
 
@@ -189,7 +189,7 @@ header {
     }
 
     @media (min-width: 768px) {
-background-image: url('../img/YellowRedTape.png');
+	background-image: url('../img/YellowRedTape.png');
         .header-content {
             position: absolute;
             top: 50%;
