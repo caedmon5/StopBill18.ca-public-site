@@ -154,7 +154,7 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: 100vh; /* Ensures the header takes up the full viewport height */
+    /* min-height: 100vh; /* Ensures the header takes up the full viewport height */ */
     @include background-contain; /* Ensure this mixin is defined */
     background-position: center;
     background-image: url('../img/redtapeBig.png');
